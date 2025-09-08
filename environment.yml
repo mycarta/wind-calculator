@@ -1,0 +1,14 @@
+name: wind-panel-app
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - panel
+  - numpy
+  - bokeh
+  - jupyterlab
+  - notebook
+  - jupyter_panel_proxy 
+  - pip
+  - pip:
+      - pyviz-comms
