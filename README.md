@@ -1,5 +1,4 @@
 # wind-calculator
- 
 
 
 
