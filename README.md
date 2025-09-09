@@ -14,12 +14,12 @@ I made a number of educated assumptions, based on published engineering formulas
   - Efficiency factor for derating annual energy output is fixed at 0.2 (20%). This is a coservative value, well below the Betz Limit, lumping efficiency, partial wake, total wake effects.
   - Turbine spacing factor is set to 5.98, following once again work cited in von Krauland et al.
 
-
 These assumptions are intended to provide representative, but not site-specific, estimates.
 
-## References
+### References
     - Harness It, by Michael Ginsberg, 2019, Business Expert Press
-    - von Krauland et al., 2023, [United States offshore wind energy atlas](https://doi.org/10.1016/j.ecmx.2023.100410)
+    - von Krauland et al., 2023, [United States offshore wind energy atlas
+		https://www.sciencedirect.com/science/article/pii/S2590174523000661
 	
 	
 Click the button to launch app 
