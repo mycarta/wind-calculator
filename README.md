@@ -18,7 +18,7 @@ These assumptions are intended to provide representative, but not site-specific,
 
 ### References
     - Harness It, by Michael Ginsberg, 2019, Business Expert Press
-    - von Krauland et al., 2023, [United States offshore wind energy atlas](https://www.sciencedirect.com/science/article/pii/S2590174523000661)
+    - von Krauland et al., 2023, [United States offshore wind energy atlas]([url](https://www.sciencedirect.com/science/article/pii/S2590174523000661))
 	
 	
 Click the button to launch app 
