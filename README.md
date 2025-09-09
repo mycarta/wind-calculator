@@ -3,8 +3,10 @@
 ### Quick description 
 The notebook in this repo allows quick interactive wind power calculations using Panel. Users can estimate a wind turbine's output on rotor diameter and wind speed, and also site-wide energy production based on available area in squared kilometers, and a turbine density factor.
 
-### Assumptions
-I made a number of educated assumptions, based on published engineering formulas, and literature research. They are summarized below:
+### Calculations and assumptions
+All calculation functions are created from formulas in Michael Ginsberg's book, except for the turbine installation calculation, which is derived from the paper by von Krauland et al. (supplemental material).
+
+I made a number of educated assumptions, based on the publications referenced. They are summarized below:
 
 - **Lookup Tables:** Air density and wind speed values are derived from published sources (von Krauland et al., 2023, and references therein) and are indexed by rotor diameter, representing typical offshore conditions at various hub heights. For simplicity the rotor diameter and hub height (for wind speed choice) are set to equal.
 
