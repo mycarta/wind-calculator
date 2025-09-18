@@ -8,3 +8,5 @@ dependencies:
   - numpy
   - bokeh==2.4.3
   - jupyter_bokeh
+  - pytest
+  - hypothesis
