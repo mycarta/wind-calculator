@@ -4,9 +4,11 @@ channels:
   - pyviz
   - defaults
 dependencies:
-  - panel
-  - numpy
-  - bokeh==2.4.3
-  - jupyter_bokeh
+  - python=3.12
+  - numpy=1.26.*
+  - panel=1.4.4
+  - bokeh=3.4.1
+  - jupyter_bokeh=2.0.4
+  - notebook
   - pytest
   - hypothesis
