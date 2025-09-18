@@ -1,21 +1,20 @@
 ## Offshore wind calculator
 
 ### Quick description 
-The notebook in this repo allows quick interactive wind power calculations using Panel. Users can estimate a wind turbine's output on rotor diameter and wind speed, and also site-wide energy production based on available area in squared kilometers, and a turbine density factor.
+The notebook in this repo allows quick interactive wind power calculations using Panel. Users can estimate a wind turbine's output on rotor diameter and wind speed, and also site-wide energy production with adjustable parameters.
 
 **The main parameters—including air density, energy pattern factor, efficiency, and turbine spacing factor—can be interactively adjusted in the app UI to see their effect on the results.**
 
 ### Calculations and assumptions
-All calculation functions are created from formulas in Michael Ginsberg's book, except for the turbine installation calculation, which is derived from the paper by von Krauland et al. (supplemental material).
+All calculation functions are created from formulas in Michael Ginsberg's book, except for the turbine installation calculation, which is derived from the paper by von Krauland et al. (supplemental).
 
 I made a number of educated assumptions, based on the publications referenced. They are summarized below:
 
-- **Lookup Tables:** Air density and wind speed values are from published sources for Northeast Atlantic US (von Krauland et al., 2023, and references therein) and are indexed by rotor diameter, representing typical offshore conditions at various hub heights. For simplicity the rotor diameter and hub height (for wind speed choice) are set to equal.
-
+- **Lookup Tables:** Air density and wind speed values are from published sources for Northeast Atlantic US (von Krauland et al., 2023, and references therein) and are indexed by rotor diameter, region, and site.
 - **Default Parameters:**
   - Air density defaults to 0.990 kg/m³ (200 m altitude) unless otherwise specified. Assuming Installation of Vestas' V236 15.0MW, or similar turbines.
   - Energy pattern factor is set to 1.91, corresponding to a Rayleigh wind speed distribution (Weibull k=2).
-  - Efficiency factor for derating annual energy output cna be set to the range 20% -30%. This is a coservative value, well below the Betz Limit, lumping efficiency, partial wake, total wake effects.
+  - Efficiency factor for derating annual energy output cna be set to the range 20% -30%. This is a coservative value, well below the Betz Limit, lumping efficiency, partial wake, total wake effects, and so forth.
   - Turbine spacing factor is set to 5.98, following once again work cited in von Krauland et al.
 
 These assumptions are intended to provide representative, but not site-specific, estimates.
@@ -25,6 +24,24 @@ These assumptions are intended to provide representative, but not site-specific,
     - von Krauland et al., 2023, [United States offshore wind energy atlas
 		https://www.sciencedirect.com/science/article/pii/S2590174523000661
 		
-
 Click the button to launch app 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mycarta/wind-calculator/HEAD?urlpath=%2Fdoc%2Ftree%2FPanel_app_pkg.ppynb)
+
+---
+
+## AI (Artificial Intelligence) and HI (Human Intelligence) Statement
+
+_Modified from Brewin: [Why I wrote an AI transparency statement for my book—and think other authors should too](http://www.theguardian.com/books/2024/apr/04/why-i-wrote-an-ai-transparency-statement-for-my-book-and-think-other-authors-should-too)_
+
+| Question | Answer |
+|---|---|
+| Has any code been generated using HI? | Yes |
+| Has any methods of analysis been suggested using HI? | Yes |
+| Has any code been generated using AI? | No |
+| Has any code been refactored or improved using AI? | Yes |
+| Has any ancillary text in the code been generated using AI? | Yes |
+| Has any documentation (other than README) been generated or improved using AI? | Yes |
+| Has the README been improved by AI? | Yes |
+| Has any methods of analysis been suggested using AI? | No |
+| Do any analyses utilize AI technologies, such as Large Language Models, for tasks like analyzing, summarizing, or retrieving information from data? | No |
+| Has this AI/HI statement been improved by AI or HI? | Yes |
