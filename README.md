@@ -6,7 +6,7 @@ The notebook in this repo allows quick interactive wind power calculations using
 ### Assumptions
 I made a number of educated assumptions, based on published engineering formulas, and literature research. They are summarized below:
 
-- **Lookup Tables:** Air density and wind speed values are derived from published sources (von Krauland et al., 2023, and references therein) and are indexed by rotor diameter, representing typical offshore conditions at various hub heights. For simplicity the rotor diameter and hub height (for wind speed choice) are set to equal.
+- **Lookup Tables:** Air density and wind speed values are from published sources for Northeast Atlantic US (von Krauland et al., 2023, and references therein) and are indexed by rotor diameter, representing typical offshore conditions at various hub heights. For simplicity the rotor diameter and hub height (for wind speed choice) are set to equal.
 
 - **Default Parameters:**
   - Air density defaults to 0.990 kg/m³ (200 m altitude) unless otherwise specified. Assuming Installation of Vestas' V236 15.0MW, or similar turbines.
