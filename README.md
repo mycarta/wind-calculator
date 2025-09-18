@@ -19,9 +19,6 @@ I made a number of educated assumptions, based on the publications referenced. T
 
 These assumptions are intended to provide representative, but not site-specific, estimates.
 
-Click the button to launch app 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mycarta/wind-calculator/HEAD?urlpath=%2Fdoc%2Ftree%2FPanel_app_pkg.ipynb)
-
 ---
 
 ## Running tests (Windows PowerShell)
