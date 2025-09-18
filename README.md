@@ -8,12 +8,12 @@ All calculation functions are created from formulas in Michael Ginsberg's book, 
 
 I made a number of educated assumptions, based on the publications referenced. They are summarized below:
 
-- **Lookup Tables:** Air density and wind speed values are derived from published sources (von Krauland et al., 2023, and references therein) and are indexed by rotor diameter, representing typical offshore conditions at various hub heights. For simplicity the rotor diameter and hub height (for wind speed choice) are set to equal.
+- **Lookup Tables:** Air density and wind speed values are from published sources for Northeast Atlantic US (von Krauland et al., 2023, and references therein) and are indexed by rotor diameter, representing typical offshore conditions at various hub heights. For simplicity the rotor diameter and hub height (for wind speed choice) are set to equal.
 
 - **Default Parameters:**
   - Air density defaults to 0.990 kg/m³ (200 m altitude) unless otherwise specified. Assuming Installation of Vestas' V236 15.0MW, or similar turbines.
   - Energy pattern factor is set to 1.91, corresponding to a Rayleigh wind speed distribution (Weibull k=2).
-  - Efficiency factor for derating annual energy output is fixed at 0.2 (20%). This is a coservative value, well below the Betz Limit, lumping efficiency, partial wake, total wake effects.
+  - Efficiency factor for derating annual energy output cna be set to the range 20% -30%. This is a coservative value, well below the Betz Limit, lumping efficiency, partial wake, total wake effects.
   - Turbine spacing factor is set to 5.98, following once again work cited in von Krauland et al.
 
 These assumptions are intended to provide representative, but not site-specific, estimates.
