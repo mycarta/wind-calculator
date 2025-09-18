@@ -91,6 +91,13 @@ _Modified from Brewin: [Why I wrote an AI transparency statement for my book—a
 | Do any analyses utilize AI technologies, such as Large Language Models, for tasks like analyzing, summarizing, or retrieving information from data? | No |
 | Has this AI/HI statement been improved by AI or HI? | Yes |
 
+AI tooling details (optional)
+
+- Assistant: GitHub Copilot (Chat) in VS Code
+ - Session date(s): 2025-09-05 to 2025-09-18 (AI-assisted sessions; initial code implemented independently by HI on intervening days)
+- Scope: Added/updated tests (including worked example), added property-test fallback shim, and updated README sections (Running tests, Worked example)
+- Review: All AI outputs were reviewed and approved by the author (HI)
+
 ---
 
 ## References

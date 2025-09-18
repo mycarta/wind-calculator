@@ -1,0 +1,71 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Test: All (pytest -q)",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "-n",
+        "wind-panel-app",
+        "python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "group": "test",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Test: Verbose (pytest -v)",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "-n",
+        "wind-panel-app",
+        "python",
+        "-m",
+        "pytest",
+        "-v"
+      ],
+      "group": "test",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Test: One (by node id)",
+      "type": "shell",
+      "command": "conda",
+      "args": [
+        "run",
+        "-n",
+        "wind-panel-app",
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "${input:testNodeId}"
+      ],
+      "group": "test",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "testNodeId",
+      "type": "promptString",
+      "description": "pytest node id (e.g., tests/test_wind_calculations.py::test_annual_power_density_known_values)",
+      "default": "tests/test_wind_calculations.py"
+    }
+  ]
+}
