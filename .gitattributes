@@ -18,8 +18,10 @@
 *.json text eol=lf
 *.csv text eol=lf
 
-# Treat Jupyter notebooks as binary to avoid noisy diffs (use nbdime if desired)
-*.ipynb -diff -merge
+# Jupyter notebooks: use nbdime-friendly diff/merge drivers (requires local nbdime setup)
+*.ipynb text
+*.ipynb diff=jupyternotebook
+*.ipynb merge=jupyternotebook
 
 # Binary assets
 *.png  binary
