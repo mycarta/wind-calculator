@@ -1,2 +1,30 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize line endings and set sensible defaults
+* text=auto eol=lf
+
+# Preserve CRLF for Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Shell scripts use LF
+*.sh text eol=lf
+
+# Common text formats as LF
+*.py  text eol=lf
+*.md  text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+
+# Treat Jupyter notebooks as binary to avoid noisy diffs (use nbdime if desired)
+*.ipynb -diff -merge
+
+# Binary assets
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
