@@ -1,7 +1,7 @@
 ## Offshore wind calculator
 
 ### Quick description 
-The notebook in this repo allows quick interactive wind power calculations using Panel. Users can estimate a wind turbine's output on rotor diameter and wind speed, and also site-wide energy production with adjustable parameters.
+this app allows quick interactive wind power calculations. Users can estimate a wind turbine's output on rotor diameter and wind speed, and also site-wide energy production with adjustable parameters.
 
 **The key parameters -  air density, energy pattern factor, efficiency, and turbine spacing factor — can be interactively adjusted in the app UI to see their effect on the results.**
 
