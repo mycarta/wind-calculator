@@ -3,7 +3,7 @@
 ### Quick description 
 The notebook in this repo allows quick interactive wind power calculations using Panel. Users can estimate a wind turbine's output on rotor diameter and wind speed, and also site-wide energy production with adjustable parameters.
 
-**The main parameters—including air density, energy pattern factor, efficiency, and turbine spacing factor—can be interactively adjusted in the app UI to see their effect on the results.**
+**The key parameters -  air density, energy pattern factor, efficiency, and turbine spacing factor — can be interactively adjusted in the app UI to see their effect on the results.**
 
 ### Calculations and assumptions
 All calculation functions are created from formulas in Michael Ginsberg's book, except for the turbine installation calculation, which is derived from the paper by von Krauland et al. (supplemental).
