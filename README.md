@@ -11,7 +11,7 @@ I made a number of educated assumptions, based on published engineering formulas
 - **Default Parameters:**
   - Air density defaults to 0.990 kg/m³ (200 m altitude) unless otherwise specified. Assuming Installation of Vestas' V236 15.0MW, or similar turbines.
   - Energy pattern factor is set to 1.91, corresponding to a Rayleigh wind speed distribution (Weibull k=2).
-  - Efficiency factor for derating annual energy output is fixed at 0.2 (20%). This is a coservative value, well below the Betz Limit, lumping efficiency, partial wake, total wake effects.
+  - Efficiency factor for derating annual energy output cna be set to the range 20% -30%. This is a coservative value, well below the Betz Limit, lumping efficiency, partial wake, total wake effects.
   - Turbine spacing factor is set to 5.98, following once again work cited in von Krauland et al.
 
 These assumptions are intended to provide representative, but not site-specific, estimates.
