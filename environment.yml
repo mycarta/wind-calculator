@@ -10,5 +10,6 @@ dependencies:
   - bokeh=3.4.1
   - jupyter_bokeh=2.0.4
   - notebook
+  - ipykernel
   - pytest
   - hypothesis
