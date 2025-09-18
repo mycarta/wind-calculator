@@ -117,14 +117,13 @@ def annual_energy_output(power_kw_val):
     annual_energy_mwh = power_kw_val * 8760 / 1000
     return np.rint(annual_energy_mwh)
 
-def possible_turbine_installations(available_area_km2: float, rotor_diameter_m: float, spacing_factor: float = 5.98) -> int:
+def possible_turbine_installations(available_area_km2: float, rotor_diameter_m: float, spacing_factor: float) -> int:
     """
     Calculate the number of possible realizable wind turbine installations (Nturb).
 
     Nturb = Available Area (m²) / Turbine Spacing Density (m²)
-    Turbine Spacing Density = (F * Rotor Diameter (m))^2
-    Where F is the spacing factor (default 5.98 for offshore wind farms)
-    as suggested in United States offshore wind energy atlas, von Krauland et al. (2023)
+    Turbine Spacing Density = (spacing_factor * Rotor Diameter (m))^2
+    spacing_factor: Turbine density factor (user-controlled, typically 3-10 for offshore wind farms)
 
     Parameters:
     -----------
@@ -132,8 +131,8 @@ def possible_turbine_installations(available_area_km2: float, rotor_diameter_m: 
         Total available area in square kilometers (km²).
     rotor_diameter_m : float
         Turbine rotor diameter in meters (m).
-    spacing_factor : float, optional
-        Spacing factor F (default 5.98 for offshore wind farms).
+    spacing_factor : float
+        Turbine density factor (user-controlled, typically 3-10 for offshore wind farms).
 
     Returns:
     --------
@@ -142,10 +141,10 @@ def possible_turbine_installations(available_area_km2: float, rotor_diameter_m: 
 
     Example:
     --------
-    >>> possible_turbine_installations(1, 50)
+    >>> possible_turbine_installations(1, 50, 6)
     # Available Area = 1 km² = 1,000,000 m²
-    # Turbine Spacing Density = (5.98 * 50)^2 = 89,402 m²
-    # Nturb = 1,000,000 / 89,402 = 11.18 -> 11 turbines (rounded down)
+    # Turbine Spacing Density = (6 * 50)^2 = 90,000 m²
+    # Nturb = 1,000,000 / 90,000 = 11.11 -> 11 turbines (rounded down)
     """
     available_area_m2 = available_area_km2 * 1_000_000
     spacing_density = (spacing_factor * rotor_diameter_m) ** 2
