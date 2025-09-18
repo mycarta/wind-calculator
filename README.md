@@ -1,7 +1,9 @@
 ## Offshore wind calculator
- 
+
 ### Quick description 
 The notebook in this repo allows quick interactive wind power calculations using Panel. Users can estimate a wind turbine's output on rotor diameter and wind speed, and also site-wide energy production based on available area in squared kilometers, and a turbine density factor.
+
+**The main parameters—including air density, energy pattern factor, efficiency, and turbine spacing factor—can be interactively adjusted in the app UI to see their effect on the results.**
 
 ### Calculations and assumptions
 All calculation functions are created from formulas in Michael Ginsberg's book, except for the turbine installation calculation, which is derived from the paper by von Krauland et al. (supplemental material).
@@ -22,7 +24,7 @@ These assumptions are intended to provide representative, but not site-specific,
     - Harness It, by Michael Ginsberg, 2019, Business Expert Press
     - von Krauland et al., 2023, [United States offshore wind energy atlas
 		https://www.sciencedirect.com/science/article/pii/S2590174523000661
-	
-	
+		
+
 Click the button to launch app 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mycarta/wind-calculator/HEAD?urlpath=%2Fdoc%2Ftree%2FPanel_app_pkg.ppynb)
