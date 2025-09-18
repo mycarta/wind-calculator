@@ -19,13 +19,8 @@ I made a number of educated assumptions, based on the publications referenced. T
 
 These assumptions are intended to provide representative, but not site-specific, estimates.
 
-### References
-    - Harness It, by Michael Ginsberg, 2019, Business Expert Press
-    - von Krauland et al., 2023, [United States offshore wind energy atlas
-		https://www.sciencedirect.com/science/article/pii/S2590174523000661
-		
 Click the button to launch app 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mycarta/wind-calculator/HEAD?urlpath=%2Fdoc%2Ftree%2FPanel_app_pkg.ppynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mycarta/wind-calculator/HEAD?urlpath=%2Fdoc%2Ftree%2FPanel_app_pkg.ipynb)
 
 ---
 
@@ -95,3 +90,10 @@ _Modified from Brewin: [Why I wrote an AI transparency statement for my book—a
 | Have any methods of analysis been developed and organized by AI? | No |
 | Do any analyses utilize AI technologies, such as Large Language Models, for tasks like analyzing, summarizing, or retrieving information from data? | No |
 | Has this AI/HI statement been improved by AI or HI? | Yes |
+
+---
+
+## References
+
+- Michael Ginsberg (2019). Harness It. Business Expert Press.
+- von Krauland, P., Musial, W., et al. (2023). United States offshore wind energy atlas. Applied Energy, 345, 121243. https://www.sciencedirect.com/science/article/pii/S2590174523000661
