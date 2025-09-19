@@ -6,7 +6,7 @@ this app allows quick interactive wind power calculations. Users can estimate a 
 **The key parameters -  air density, energy pattern factor, efficiency, and turbine spacing factor — can be interactively adjusted in the app UI to see their effect on the results.**
 
 ### Calculations and assumptions
-All calculation functions are created from formulas in Michael Ginsberg's book, except for the turbine installation calculation, which is derived from the paper by von Krauland et al. (supplemental).
+All calculation functions are created from formulas in Michael Ginsberg's book (2009) for the **Swept Area Method**, except for the possible turbine installation calculation, which is derived from the paper by von Krauland et al. (supplemental).
 
 I made a number of educated assumptions, based on the publications referenced. They are summarized below:
 
